@@ -754,8 +754,8 @@ module hingedbox_half( bd, topflag=false ) {
             hcp = (dx * i);
             if (topflag) { 
                 hxofs = (bhl/2) + (CLEAR);
-                translate( [hcp + hxofs +thl, hy , hlz] ) rotate([0,-90,0]) hinge( thl, 1 ) ;
-                translate( [hcp - hxofs , hy , hlz] ) rotate([0,-90,0]) hinge( thl, -1 ) ;
+                translate( [(dx-hcp) + hxofs +thl, hy , hlz] ) rotate([0,-90,0]) hinge( thl, 1 ) ;
+                translate( [(dx-hcp) - hxofs , hy , hlz] ) rotate([0,-90,0]) hinge( thl, -1 ) ;
             } else {
                 translate( [hcp - (bhl/2) , hy ,hlz ] ) rotate([0,90,0]) hinge( bhl,  0)  ;
             }

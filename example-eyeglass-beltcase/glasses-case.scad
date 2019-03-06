@@ -32,7 +32,7 @@ catch_offset = 0.8;
 catch_hole_xtra = 0.8;
 catch_foot_xrat = 1;
 
-nametext= "Esme";
+nametext= "";
 
 module decorate_front( d ) { 
     yd = d.y*0.7; yofs=0;
